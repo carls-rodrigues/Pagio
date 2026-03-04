@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/features/auth/hooks/useAuth";
+import { SignOutButton } from "@/features/auth/components/SignOutButton";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { status } = useAuth();
@@ -17,5 +18,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   if (status === "loading") return null;
   if (status === "unauthenticated") return null;
 
-  return <>{children}</>;
+  return (
+    <>
+      <header>
+        <SignOutButton />
+      </header>
+      {children}
+    </>
+  );
 }
