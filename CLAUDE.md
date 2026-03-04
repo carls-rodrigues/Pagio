@@ -899,7 +899,7 @@ Always write user stories in this exact structure:
 | S-01 | User can sign up and sign in                             | ready  |
 | S-02 | User can sign out                                        | ready  |
 | S-03 | User can manage vendors                                  | ready  |
-| S-04 | User can upload an invoice                               | ready  |
+| S-04 | User can upload an invoice                               | done   |
 | S-05 | System extracts invoice data automatically on upload     | ready  |
 | S-06 | User can correct AI-extracted invoice data               | ready  |
 | S-07 | User can view their invoice list                         | ready  |
