@@ -1,3 +1,10 @@
+import { SignInForm } from "@/features/auth/components/SignInForm";
+
 export default function SignInPage() {
-  return <div>Sign In — S-01</div>;
+  return (
+    <main>
+      <h1>Sign in to Pagio</h1>
+      <SignInForm />
+    </main>
+  );
 }
