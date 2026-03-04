@@ -1,5 +1,6 @@
 const tseslint = require("@typescript-eslint/eslint-plugin");
 const tsParser = require("@typescript-eslint/parser");
+const nextPlugin = require("@next/eslint-plugin-next");
 
 /** @type {import("eslint").Linter.Config[]} */
 module.exports = [
@@ -26,13 +27,13 @@ module.exports = [
     },
     plugins: {
       "@typescript-eslint": tseslint,
+      "@next/next": nextPlugin,
     },
     rules: {
       ...tseslint.configs.recommended.rules,
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_" },
-      ],
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
     },
