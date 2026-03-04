@@ -11,6 +11,8 @@ type AuthStatus = "loading" | "authenticated" | "unauthenticated";
 interface AuthStore {
   user: AuthUser | null;
   status: AuthStatus;
+  // organizationId = uid until S-17 introduces real org management
+  organizationId: string | null;
   setUser: (user: AuthUser) => void;
   clearUser: () => void;
 }
@@ -18,6 +20,7 @@ interface AuthStore {
 export const useAuthStore = create<AuthStore>((set) => ({
   user: null,
   status: "loading",
-  setUser: (user) => set({ user, status: "authenticated" }),
-  clearUser: () => set({ user: null, status: "unauthenticated" }),
+  organizationId: null,
+  setUser: (user) => set({ user, status: "authenticated", organizationId: user.uid }),
+  clearUser: () => set({ user: null, status: "unauthenticated", organizationId: null }),
 }));
