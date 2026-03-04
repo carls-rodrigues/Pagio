@@ -1,5 +1,5 @@
 {
-  "name": "@revelo/web",
+  "name": "@pagio/web",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@revelo/shared": "workspace:*",
+    "@pagio/shared": "workspace:*",
     "firebase": "^11.0.0",
     "next": "15.1.0",
     "react": "^19.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "@revelo/shared",
+  "name": "@pagio/shared",
   "version": "0.0.1",
   "private": true,
   "main": "./types/index.ts",

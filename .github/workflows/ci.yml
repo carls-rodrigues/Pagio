@@ -71,4 +71,4 @@ jobs:
       - name: Build web
         run: pnpm build
       - name: Build functions
-        run: pnpm --filter @revelo/functions build
+        run: pnpm --filter @pagio/functions build

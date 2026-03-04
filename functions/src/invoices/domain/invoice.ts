@@ -1,4 +1,4 @@
-import type { Invoice, InvoiceStatus, LineItem, Timestamp } from "@revelo/shared";
+import type { Invoice, InvoiceStatus, LineItem, Timestamp } from "@pagio/shared";
 
 export type { Invoice, InvoiceStatus, LineItem };
 

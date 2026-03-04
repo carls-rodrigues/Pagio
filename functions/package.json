@@ -1,5 +1,5 @@
 {
-  "name": "@revelo/functions",
+  "name": "@pagio/functions",
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.30.0",
-    "@revelo/shared": "workspace:*",
+    "@pagio/shared": "workspace:*",
     "firebase-admin": "^13.0.0",
     "firebase-functions": "^6.0.0",
     "openai": "^4.0.0",

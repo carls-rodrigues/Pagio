@@ -14,7 +14,7 @@
       "source": "functions",
       "codebase": "default",
       "ignore": ["node_modules", ".git", "firebase-debug.log", "firebase-debug.*.log"],
-      "predeploy": ["pnpm --filter @revelo/functions build"]
+      "predeploy": ["pnpm --filter @pagio/functions build"]
     }
   ],
   "firestore": {

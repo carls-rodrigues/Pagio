@@ -1,8 +1,8 @@
-# Revelo — CLAUDE.md
+# Pagio — CLAUDE.md
 
 ## Project Overview
 
-Revelo is a portfolio project demonstrating production-grade engineering skills for a Full-Stack Engineer role at an enterprise automation company. It is an AI-powered invoice management platform (Accounts Payable / Accounts Receivable) built to showcase:
+Pagio is a portfolio project demonstrating production-grade engineering skills for a Full-Stack Engineer role at an enterprise automation company. It is an AI-powered invoice management platform (Accounts Payable / Accounts Receivable) built to showcase:
 
 - Firebase-based backend (Firestore, Cloud Functions, triggers)
 - React / Next.js frontend
@@ -59,7 +59,7 @@ invoices/
 ### Complete Project Structure
 
 ```
-revelo/
+pagio/
 ├── apps/
 │   └── web/                              # Next.js application
 │       ├── src/
@@ -687,7 +687,7 @@ function createInvoice(input: CreateInvoiceInput): Invoice {
 
 **Problem:** Types in `shared/` are not resolved correctly in `apps/web` or `functions` because pnpm's hoisting rules exclude workspace packages from auto-resolution.
 
-**Solution:** Add `shared` as an explicit workspace dependency in each package's `package.json`: `"@revelo/shared": "workspace:*"`. Import from `@revelo/shared` not via relative paths.
+**Solution:** Add `shared` as an explicit workspace dependency in each package's `package.json`: `"@pagio/shared": "workspace:*"`. Import from `@pagio/shared` not via relative paths.
 
 ---
 

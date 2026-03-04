@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { User } from "@revelo/shared";
+import type { User } from "@pagio/shared";
 
 type AuthStatus = "loading" | "authenticated" | "unauthenticated";
 

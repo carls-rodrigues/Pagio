@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@revelo/shared"],
+  transpilePackages: ["@pagio/shared"],
 };
 
 export default nextConfig;

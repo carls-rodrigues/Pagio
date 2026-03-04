@@ -1,5 +1,5 @@
 {
-  "name": "revelo",
+  "name": "pagio",
   "version": "0.0.1",
   "private": true,
   "engines": {
@@ -8,8 +8,8 @@
   },
   "packageManager": "pnpm@9.0.0",
   "scripts": {
-    "dev": "pnpm --filter @revelo/web dev",
-    "build": "pnpm --filter @revelo/web build",
+    "dev": "pnpm --filter @pagio/web dev",
+    "build": "pnpm --filter @pagio/web build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test"

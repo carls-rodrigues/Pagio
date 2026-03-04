@@ -1,2 +1,2 @@
 // Re-export all shared types
-export * from "@revelo/shared";
+export * from "@pagio/shared";

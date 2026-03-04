@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Notification } from "@revelo/shared";
+import type { Notification } from "@pagio/shared";
 
 interface NotificationState {
   notifications: Notification[];
